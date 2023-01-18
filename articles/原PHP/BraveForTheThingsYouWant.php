@@ -88,8 +88,8 @@ Brave for the things you want.</p>
 							<i class="fa-solid fa-newspaper"></i> 文章堆
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="thePlanet.html">歌曲分享</a></li>
-								<li><a class="dropdown-item" href="#">長篇文章</a></li>
+								<li><a class="dropdown-item" href="../categories/songs.html">歌曲分享</a></li>
+								<li><a class="dropdown-item" href="../categories/articles.html">長篇文章</a></li>
 							</ul>
 						</li>
 
@@ -116,7 +116,7 @@ Brave for the things you want.</p>
 	<!-- Body -->
 	<div class="container mTop30">
 		<center>
-			<div class="col-sm-9" style="text-align: left;">
+			<div class="col-sm-9 mR10 mL10" style="text-align: left;">
 				<?php echo($content)?>
 			</div>
 		</center>
