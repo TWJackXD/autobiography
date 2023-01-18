@@ -100,7 +100,7 @@ LGBTQ+：L 代表 Leabian，女同志；G 代表 Gay，男同志；B 代表 Bise
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="thePlanet.html">歌曲分享</a></li>
-								<li><a class="dropdown-item" href="#">長篇文章</a></li>
+								<li><a class="dropdown-item" href="LoveIsLove.html">長篇文章</a></li>
 							</ul>
 						</li>
 
