@@ -76,7 +76,11 @@ $content = 'HTML內容	';
 
 	<!-- Body -->
 	<div class="container mTop30">
-<?php echo($content)?>
+		<center>
+			<div class="col-sm-9" style="text-align: left;">
+				<?php echo($content)?>
+			</div>
+		</center>
 	</div>
 
 	<!-- Footer -->
