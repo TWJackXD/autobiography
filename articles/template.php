@@ -1,3 +1,10 @@
+<?php
+$style = "/*Custom CSS*/";
+$title = "網頁標題";
+$date = "日期";
+$cat = "分類";
+$content = 'HTML內容	';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +15,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<title>我是呆呆我好爛</title>
-	<link href="img/icon.png" rel="icon">
+	<link href="../css/style.css" rel="stylesheet">
+	<title><?php echo($title)?> - 我是呆呆我好爛</title>
+	<link href="../img/icon.png" rel="icon">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="description" content="來看看弱爆的呆呆在幹嘛吧！" />
 </head>
@@ -18,7 +25,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
 		<div class="container">
-		    <a class="navbar-brand" href="index.html">我是呆呆我好爛</a>
+		    <a class="navbar-brand" href="../index.html">我是呆呆我好爛</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#NavToggler">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
@@ -30,7 +37,7 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
-							<a class="nav-link active mR20" href="index.html"><i class="fa-solid fa-globe"></i> 首頁</a>
+							<a class="nav-link active mR20" href="../index.html"><i class="fa-solid fa-globe"></i> 首頁</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link mR20" style="cursor: not-allowed;"><i class="fa-solid fa-user-large"></i> 關於我</a>
@@ -42,7 +49,7 @@
 							<i class="fa-solid fa-newspaper"></i> 文章堆
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="articles/thePlanet.php">歌曲分享</a></li>
+								<li><a class="dropdown-item" href="thePlanet.php">歌曲分享</a></li>
 								<li><a class="dropdown-item" href="#">長篇文章</a></li>
 							</ul>
 						</li>
@@ -60,33 +67,16 @@
 	<!-- Banner -->
 	<div class="container-fluid text-light" style="background: #333333;">
 		<div class="row align-items-center text-center banner">
-			<div class="col-sm-7">
-				<h1>我是呆呆<br/>而且我好爛</h1>
-				<h6 class="mTop20">我真心覺得我好弱 :(</h6>
-			</div>
-			<div class="col-sm-4 mTop10">
-				<img src="img/CtrlCV.jfif" class="img-thumbnail"/>
+			<div class="col">
+				<h2><?php echo($title)?></h2>
+				<span>小狼呆呆．<?php echo($date)?>．<?php echo($cat)?></span>
 			</div>
 		</div>
 	</div>
 
 	<!-- Body -->
-	<div class="container mTop30 text-center">
-		<h2>答應我，記住這段話！</h2>
-		<div class="row mTop30 mBtm10 justify-content-center align-items-center">
-			<div class="col-sm-1 mR10 mBtm10">
-				<img src="img/icon.png" class="mBtm10 rounded" height="60px"/>
-				<br/>小狼呆呆<br/>@Jack_XD
-			</div>
-			<div class="col-sm-4 mBtm10" style="text-align: left; border-radius: 10px;">
-				<div class="quote-1">
-					<p>真正的死亡，是連自己也放棄希望。</p>
-					<p>所以抱持希望，努力的活下去吧！</p>
-					<p>你永遠都不知道，你會在人生的哪個階段，</p>
-					<p>遇上一個改變你一生的人。</p>
-				</div>
-			</div>
-		</div>
+	<div class="container mTop30">
+<?php echo($content)?>
 	</div>
 
 	<!-- Footer -->
@@ -95,3 +85,4 @@
 		版面參考 <a href="https://yuyutw.tk" target="_blank">[佑仔 - 個人網誌Demo]</a>
 	</footer>
 </body>
+<style><?php echo($style)?></style>
