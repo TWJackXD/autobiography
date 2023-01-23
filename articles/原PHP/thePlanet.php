@@ -85,7 +85,7 @@ $content = '
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
-							<a class="nav-link active mR20" href="../index.html"><i class="fa-solid fa-globe"></i> 首頁</a>
+							<a class="nav-link mR20" href="../index.html"><i class="fa-solid fa-globe"></i> 首頁</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link mR20" style="cursor: not-allowed;"><i class="fa-solid fa-user-large"></i> 關於我</a>
@@ -93,7 +93,7 @@ $content = '
 
 
 						<li class="nav-item dropdown mR20">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
 							<i class="fa-solid fa-newspaper"></i> 文章堆
 							</a>
 							<ul class="dropdown-menu">
